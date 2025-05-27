@@ -2,4 +2,4 @@
 
 The app is hosted on Vercel.
 
-Link: 
+Link: https://assignment-my-learning-campus.vercel.app/
