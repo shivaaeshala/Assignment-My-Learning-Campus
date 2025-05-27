@@ -1,0 +1,96 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* min-height: 100vh; */
+  /* width: 100%; */
+  padding-top: 10vh;
+  margin: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+h1 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.search-wrapper {
+  width: 250%;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 4px 6px rgba(217, 219, 222, 0.28);
+  padding: 0;
+}
+
+.search-input-container {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  padding: 5px;
+  flex-grow: 1;
+  background-color: #fff;
+  color: #000000;
+}
+
+.clear-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #000000;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.suggestions-list {
+  list-style: none;
+  padding: 0 0 15px 0;
+  margin: 0;
+  /* width: 100%; */
+  border-top: none;
+  box-sizing: border-box;
+  color: #000000;
+}
+
+.suggestion-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  transition: background-color 0.1s ease;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+.suggestion-item.active {
+  background-color: #e8e8e8;
+}
+
+.suggestion-item strong {
+  font-weight: bold;
+}
+
+.no-results {
+    padding: 15px 20px;
+    color: #5f6368;
+}
